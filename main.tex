@@ -4,17 +4,35 @@
 \usepackage{tikz}
 \usepackage{pgf-pie}
 \usepackage{verbatim}
+\usepackage{fancyhdr}
 
-\setlength{\tabcolsep}{0.6em} % for the horizontal padding
-{\renewcommand{\arraystretch}{1.34}% for the vertical padding
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[R]{\textcolor{gray!80}{Coding Club Proposal - \nouppercase{\rightmark}}}
+\fancyfoot[CR,CL]{\textcolor{gray!80}{Page \thepage}}
+\fancyfoot[L]{\textcolor{gray!80}{Ben Raz}}
+\fancyfoot[R]{\textcolor{gray!80}{\today}}
 
-\title{\Huge{\textbf{Proposal to \\Form a Coding Club}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{
+\color{gray!80}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\tabcolsep}{0.6em}
+{\renewcommand{\arraystretch}{1.34}
+
+\title{
+    \Huge{\textbf{\textcolor{green!80!yellow!80!blue}
+    {A Proposal} \\[0.9em]
+    To The Leadership Team \\[0.9em]
+    Concerning the Formation of a Coding Club
+    }}}
+
 \author{Ben Raz \texttt{<ben.raz2008@gmail.com>}}
 \date{\today}
 
 \begin{document}
 
     \maketitle
+    \pagestyle{fancy}
 
     \section{Introduction}
 
@@ -41,6 +59,7 @@
 
         Increasingly in the last few years, coding has begun to be taught to children at an early age, being seen as an easy-to-learn valuable skill. This makes the abscence of a coding club especially hard to take.
     \newpage
+    
     \section{The Demand For A Coding Club}
 
         \subsection{The Survey Results}
@@ -51,8 +70,13 @@
             \begin{center}
             \begin{tikzpicture}
 
-                \pie
-                [radius=2]
+                \pie[radius={2},
+                    polar,
+                    rotate=-135,
+                    explode = 0.07,
+                    color={gray!80,green!80!yellow!80!blue},
+                    text=legend,
+                ]
                 {60.9/No,39.1/Yes}
 
             \end{tikzpicture}
@@ -70,7 +94,7 @@
         \newpage
         \subsubsection{Insights}
 
-            The other previously mentioned question asks the respondent to detail the reason for their choice. Just over half of the respondents, specifically 14, answered this optional question. Here is a paraphrased table of the responses.
+            The other previously mentioned question asks the respondent to detail the reason for their choice. Just over half of the respondents, specifically 14, answered this optional question. Here is a paraphrased table of the responses.\vspace{0.25em}
 
             \begin{center}
                 \begin{tabular}{l|l|l}
