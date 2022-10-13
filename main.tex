@@ -2,7 +2,11 @@
 
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{pgf-pie}
 \usepackage{verbatim}
+
+\setlength{\tabcolsep}{0.6em} % for the horizontal padding
+{\renewcommand{\arraystretch}{1.34}% for the vertical padding
 
 \title{\Huge{\textbf{Proposal to \\Form a Coding Club}}}
 \author{Ben Raz \texttt{<ben.raz2008@gmail.com>}}
@@ -36,8 +40,52 @@
         Aside from DA club, there are no other options for coding as of today, \today. The \textsc{Wednesday Art Club} used to be an option, but due to recent rule changes (another can of worms), coding is not allowed in any capacity to anyone, regardless of experience or skill level.
 
         Increasingly in the last few years, coding has begun to be taught to children at an early age, being seen as an easy-to-learn valuable skill. This makes the abscence of a coding club especially hard to take.
-
+    \newpage
     \section{The Demand For A Coding Club}
+
+        \subsection{The Survey Results}
+
+        \subsubsection{The Raw Numbers}
+            Starting October 11th, 2022, a school-wide survey was distributed via Focus to all Winston Students. Each student was presented with a multiple choice question concerning whether they would join a coding club. Additionally, most students wrote a reason justifying their answer. After 23 responses, 9 students answered yes to the question.
+
+            \begin{center}
+            \begin{tikzpicture}
+
+                \pie
+                [radius=2]
+                {60.9/No,39.1/Yes}
+
+            \end{tikzpicture}
+            \end{center}
+
+            These results, taken at face value, satisfy the need for a coding club comfortably. 9 students is more or less the average class size at Winston.
+
+
+            However, we can do even better with these results. Only 20 students responded when in reality there is closer to 80 students at Winston. If we extrapolate these findings:
+            \[
+                \frac{9}{23} \approx \frac{30}{80}
+            \]
+
+            That means that there are possibly almost 30 students interested in joining a coding club. This satisfies the above requirement easily. In reality this extrapolation is flawed due to the fact that different age groups tend to have differing interests. Even with this taken into account, the largely unspoken interest in a coding club amongst the general student population is startling.
+        \newpage
+        \subsubsection{Insights}
+
+            The other previously mentioned question asks the respondent to detail the reason for their choice. Just over half of the respondents, specifically 14, answered this optional question. Here is a paraphrased table of the responses.
+
+            \begin{center}
+                \begin{tabular}{l|l|l}
+                \textbf{No}  & Not enough time           & 2 Responses    \\
+                             & No Interest/No Use        & 4 Responses    \\ \hline
+                \textbf{Yes} & Monetary Ambitions        & 1 Response     \\
+                             & Inspiration From YouTube  & 1 Response     \\
+                             & Beneficial for Getting Into College & 1 Response \\
+                             & Like the Idea of Learning to Code & 3 Responses \\ \hline
+                \textbf{Maybe} & Depending on Topics & 1 Response   \\
+                               & Not for me; Good Idea & 1 Response \\
+                \end{tabular}
+            \end{center}
+
+            The main factor in decision making seemed to be interest in learning to code and to coding in general. Secondary factors included boosting one's career.
     \section{Implementation Details}
 
         \subsection{Club Activities}
