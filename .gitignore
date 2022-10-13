@@ -1,5 +1,6 @@
 *.aux
 *.log
 *.DS_Store
+*.toc
 README.pdf
 .idea/
